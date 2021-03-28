@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <link href="./froganizer resources/css/FroganizerCss.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Froganizer - Calandar</title>
+        <script>
+            function getCurrentDate() {
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = "";
+                switch(today.getMonth() + 1) {
+                    case 1:
+                        month = "January";
+                        break;
+                    case 2:
+                        month = "February";
+                        break;
+                    case 3:
+                        month = "March";
+                        break;
+                    case 4:
+                        month = "April";
+                        break;
+                    case 5:
+                        month = "May";
+                        break;
+                    case 6:
+                        month = "June";
+                        break;
+                    case 7:
+                        month = "July";
+                        break;
+                    case 8:
+                        month = "August";
+                        break;
+                    case 9:
+                        month = "September";
+                        break;
+                    case 10:
+                        month = "October";
+                        break;
+                    case 11:
+                        month = "November";
+                        break;
+                    case 12:
+                        month = "December";
+                        break;
+                    }
+
+                var day = today.getDate();
+                var paragraph = document.getElementById("currentMonth");
+                var text = document.createTextNode(month + " " + year);
+                paragraph.appendChild(text);
+
+                document.getElementById(day + "day");
+
+            }
+        </script>
+
+
+    </head>
+    <div id="wrapper">
+
+    <body>
+        
+        
+        <header>
+            
+            <a href="FroganizerHome.html"><img src="Froganizer Resources/frogsSinging.gif" height="150" width="300" align="left" hspace="20"></a>
+            <br><br><h1> Froganizer </h1>
+
+
+        </header>
+
+        <br clear="all">
+        <hr>
+        <p>
+            Eventually there would be a way to create a task on this page for the day that was clicked, as well as journal about your day! :D 
+        </p>
+        
+
+    </body>
+    </div>
+</html>

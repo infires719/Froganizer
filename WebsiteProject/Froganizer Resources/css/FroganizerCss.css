@@ -1,0 +1,152 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+  }
+   
+   
+  h1 {
+    color: rgb(21, 160, 21);  
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    
+    
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    height:250px;
+    padding:50px 50px;
+    background: #e266d1;
+    
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+   
+  p, 
+  li {
+    font-size: 18px;
+  }
+   
+   
+  a {
+    text-decoration: none;
+  }
+
+  ol {list-style-type: none;}
+
+  #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1080px;
+}
+
+  h2 {
+    color:white;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+
+
+  .button {
+      border:none;
+      cursor:pointer;
+      display: inline-block;
+      text-align: left;
+      background-color:  #ece7e7;
+  }
+
+  table {
+      width: 100%;
+      background: #ece7e7;
+      border: 1px solid black;
+  }
+
+  tr {
+      border: 1px solid black;
+      height:100px;
+  }
+    th {
+        border: 1px solid black;
+        background-color: #e266d1;
+    }
+  td {
+    border: 1px solid  black;
+    width: 14.2%;
+    text-align:left;
+    vertical-align: top;
+  }
+
+.days li .active {
+    padding: 5px;
+    background: rgb(21, 160, 21);
+    color: white !important
+  }
+
+  .image {
+    position: relative;
+    top: 140px;
+    left: 5px;
+    width: 200px;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.container {
+    padding: 10% 10%;
+  }
+  
+ 
+  .talk-bubble {
+      margin: 40px;
+    display: inline-block;
+    position: relative;
+      width: 200px;
+      height: auto;
+      background-color: rgb(215, 162, 247);
+  }
+  .border{
+    border: 8px solid rgb(231, 34, 189);
+  }
+  .round{
+    border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+  
+  }
+
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left:10px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: rgb(231, 34, 189) transparent transparent rgb(215, 162, 247);
+}

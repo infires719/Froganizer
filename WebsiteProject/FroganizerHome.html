@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <link href="./froganizer resources/css/FroganizerCss.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Froganizer - Home</title>
+
+        <script>
+            function getCurrentDate() {
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = "";
+                switch(today.getMonth() + 1) {
+                    case 1:
+                        month = "January";
+                        break;
+                    case 2:
+                        month = "February";
+                        break;
+                    case 3:
+                        month = "March";
+                        break;
+                    case 4:
+                        month = "April";
+                        break;
+                    case 5:
+                        month = "May";
+                        break;
+                    case 6:
+                        month = "June";
+                        break;
+                    case 7:
+                        month = "July";
+                        break;
+                    case 8:
+                        month = "August";
+                        break;
+                    case 9:
+                        month = "September";
+                        break;
+                    case 10:
+                        month = "October";
+                        break;
+                    case 11:
+                        month = "November";
+                        break;
+                    case 12:
+                        month = "December";
+                        break;
+                    }
+
+                var day = today.getDate();
+                var paragraph = document.getElementById("currentMonth");
+                var text = document.createTextNode(month + " " + year);
+                paragraph.appendChild(text);
+
+                document.getElementById(day + "day");
+
+            }
+        </script>
+
+        <script>
+            function dateClicked() {
+                window.open("FroganizerDatePage.html","_self");
+            }
+        </script>
+
+        <script>
+            function leftFrog() {
+                window.open("index.html","_self");
+            }
+        </script>
+
+<script>
+    function rightFrog() {
+        window.open("indexMira.html","_self");
+    }
+</script>
+
+    </head>
+    <div id="wrapper">
+
+    <body onload="getCurrentDate()">
+        
+        
+        <header>
+            
+            <a href="FroganizerHome.html"><img src="Froganizer Resources/frogsSinging.gif" height="150" width="300" align="left" hspace="20"></a>
+            <br><br><h1> Froganizer </h1>
+
+
+        </header>
+
+        <br clear="all">
+        <hr>
+
+        <section>
+        <div class="row">
+            <div class="column">
+                <input onclick="leftFrog()" class="prev" type="image" align="left" src="Froganizer Resources/frogLeftArrow.png" name="prevArrowButon" id="prevArrowButon">
+            </div>
+            <div class="column">
+                <div class="month">
+                    <h2 id="currentMonth"></h2>
+                </div>
+            </div>
+            <div class="column">
+                <input onclick="rightFrog()" class="next" type="image" align="right" src="Froganizer Resources/frogRightArrow.png" name="nextArrowButon" id="nextArrowButon">
+            </div>
+        </div>
+
+         
+
+            <table class="days">
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+
+                </tr>
+                <tr>
+                    <td id="spot0"> <button onclick=dateClicked() class="button"></button></td>
+                    <td id="spot1"> <button onclick=dateClicked() class="button">1</button></td>
+                    <td id="spot2"> <button  onclick=dateClicked() class="button">2</button></td>
+                    <td id="spot3"> <button  onclick=dateClicked() class="button">3</button></td>
+                    <td id="spot4"> <button  onclick=dateClicked() class="button">4</button></td>
+                    <td id="spot5"> <button  onclick=dateClicked() class="button">5</button></td>
+                    <td id="spot6"> <button  onclick=dateClicked() class="button">6</button></td>
+                   
+                </tr>
+
+                <tr>
+                    <td id="spot7"> <button  onclick=dateClicked() class="button">7</button></td>
+                    <td id="spot8"> <button  onclick=dateClicked() class="button"> 8</button></td>
+                    <td id="spot9"> <button  onclick=dateClicked() class="button">9</button></td>
+                    <td id="spot10"> <button  onclick=dateClicked() class="button">10</button></td>
+                    <td id="spot11"> <button  onclick=dateClicked() class="button">11</button></td>
+                    <td id="spot12"> <button  onclick=dateClicked() class="button">12</button></td>
+                    <td id="spot13"> <button  onclick=dateClicked() class="button">13</button></td>
+                  
+                </tr>
+
+                <tr>
+                    <td id="spot14"> <button  onclick=dateClicked() class="button">14</button></td>
+                    <td id="spot15"> <button  onclick=dateClicked() class="button">15</button></td>
+                    <td id="spot16"> <button  onclick=dateClicked() class="button">16</button></td>
+                    <td id="spot17"> <button onclick=dateClicked()  class="button">17</button></td>
+                    <td id="spot18"> <button  onclick=dateClicked() class="button">18</button></td>
+                    <td id="spot19"> <button  onclick=dateClicked() class="button">19</button></td>
+                    <td id="spot20"> <button  onclick=dateClicked() class="button">20</button></td>
+                   
+                </tr>
+
+                <tr>
+                    <td id="spot21"> <button  onclick=dateClicked() class="button">21</button></td>
+                    <td id="spot22"> <button  onclick=dateClicked() class="button">22</button></td>
+                    <td id="spot23"> <button  onclick=dateClicked() class="button">23</button></td>
+                    <td id="spot24"> <button  onclick=dateClicked() class="button">24</button></td>
+                    <td id="spot25"> <button  onclick=dateClicked() class="button">25</button></td>
+                    <td id="spot26"> <button  onclick=dateClicked() class="button">26</button></td>
+                    <td id="spot27"> <button  onclick=dateClicked() class="button">27</button></td>
+                  
+                </tr>
+                <tr>
+                    <td id="spot28"> <button  onclick=dateClicked() class="button">28</button></td>
+                    <td id="spot29"> <button  onclick=dateClicked() class="button">29</button></td>
+                    <td id="spot30"> <button  onclick=dateClicked() class="button">30</button></td>
+                    <td id="spot31"> <button  onclick=dateClicked() class="button">31</button></td>
+                    <td id="spot32"> <button  onclick=dateClicked() class="button"></button></td>
+                    <td id="spot33"> <button  onclick=dateClicked() class="button"></button></td>
+                    <td id="spot34"> <button  onclick=dateClicked() class="button"></button></td>
+               
+
+                </tr>
+
+                
+               
+                
+               
+            </table>
+        </section>
+ 
+        <div class= "image">
+            <img class= "image__img" src="froganizer resources/fightingfrog.png" alt="fighting frog" style="width:150px;height:150px;">
+            <div class= "image__overlay">
+    
+            
+            
+               
+    
+                <div class="talk-bubble tri-right border round btm-left-in" style="width:150px;height:60px;top:-280px;right:400;">
+                 
+                 <marquee behavior="scroll" direction="left" BGCOLOR=transparent style="width:150px;height:80px; text-align: center;">YOU ARE FROGGING AWESOME, HAVE A RIBBETING DAY!!</marquee> 
+    
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+    </div>
+</html>
